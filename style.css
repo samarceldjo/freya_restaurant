@@ -155,3 +155,7 @@ nav .menu {
     padding: 8px 12px;
     margin: 8px 0;
 }
+.menu-col img,
+.contact-us img {
+    width: 100%;
+}
