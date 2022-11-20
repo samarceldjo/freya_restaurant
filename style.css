@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
     --orange: #ffa580;
@@ -12,10 +13,10 @@
 }
 header {
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     background-image: linear-gradient(to bottom,
-        rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.9)
-    ), url(/assets/banner.jpg);
+        rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.8)
+    ), url(assets/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -106,7 +107,7 @@ nav .menu {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 500;
-    padding: 8px 12px;
+    padding: 12px 16px;
     margin-right: 8px;
 }
 .hero a:first-child {
@@ -139,6 +140,7 @@ nav .menu {
     align-items: center;
     flex-direction: column;
     padding: 32px 5%;
+    height: 20vh;
 }
 .make-a-reservation p {
     font-size: 1rem;
@@ -152,10 +154,67 @@ nav .menu {
     text-transform: uppercase;
     font-weight: 600;
     border: 2px solid var(--black);
-    padding: 8px 12px;
-    margin: 8px 0;
+    padding: 12px 16px;
+    margin: 8px;
+    transition: .5s;
 }
-.menu-col img,
-.contact-us img {
-    width: 100%;
+.make-a-reservation a:hover {
+    background-color: var(--black);
+    color: var(--orange);
+    transition: .5s;
+}
+
+/*IMPRESSIVE STARTER */
+.impressive-starter {
+    background-color: var(--black);
+    padding: 32px 8px;
+}
+.impressive-starter > p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 16px 0;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.impressive-starter > h3 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: var(--orange);
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+hr {
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+
+/* MENU */
+.menu-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+.menu-col img {
+    width: 100px;
+    border-radius: 50%;
+}
+.menu-col .about {
+    margin: 0 12px;
+}
+.menu-col .title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #e1e1e1;
+}
+.menu-col .desc {
+    color: #aaa;
+}
+.menu-col .price {
+    color: var(--orange);
+    font-size: 1.25rem;
 }
