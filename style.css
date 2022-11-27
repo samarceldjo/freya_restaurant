@@ -31,7 +31,7 @@ nav {
 }
 .title a {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--orange);
     text-decoration: none;
 }
@@ -100,14 +100,14 @@ nav .menu {
     font-size: 1.25rem;
     color: #eee;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 .hero a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 500;
-    padding: 12px 16px;
+    padding: 10px 16px;
     margin-right: 8px;
 }
 .hero a:first-child {
@@ -140,7 +140,6 @@ nav .menu {
     align-items: center;
     flex-direction: column;
     padding: 32px 5%;
-    height: 20vh;
 }
 .make-a-reservation p {
     font-size: 1rem;
@@ -154,7 +153,7 @@ nav .menu {
     text-transform: uppercase;
     font-weight: 600;
     border: 2px solid var(--black);
-    padding: 12px 16px;
+    padding: 10px 16px;
     margin: 8px;
     transition: .5s;
 }
@@ -167,7 +166,7 @@ nav .menu {
 /*IMPRESSIVE STARTER */
 .impressive-starter {
     background-color: var(--black);
-    padding: 32px 8px;
+    padding: 32px 5%;
 }
 .impressive-starter > p {
     text-align: center;
@@ -189,6 +188,8 @@ hr {
     width: 120px;
     margin: 0 auto;
     margin-bottom: 32px;
+    border: none;
+    border-bottom: 2px solid #fff;
 }
 
 
@@ -198,6 +199,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin: 24px 0;
+    cursor: pointer;
 }
 .menu-col img {
     width: 100px;
@@ -217,4 +219,132 @@ hr {
 .menu-col .price {
     color: var(--orange);
     font-size: 1.25rem;
+}
+
+/* TODAY CHOICE */
+.today-choice {
+    width: 100%;
+    height: 340px;
+    background-image: url(assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.chefs-choice {
+    background-color: var(--black);
+    text-align: center;
+    width: 355px;
+    padding: 20px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.chefs-choice h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: 2rem;
+    color: var(--orange);
+}
+.chefs-choice h4 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+.chefs-choice p {
+    color: #c4c4c4;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+}
+.chefs-choice a,
+input[type="submit"] {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    transition: .5s;
+    cursor: pointer;
+}
+.chefs-choice a:hover,
+input[type="submit"]:hover {
+    background-color: var(--orange);
+    color: #000;
+    font-weight: 600;
+    transition: .5s;
+}
+
+/* CONTACT */
+section.contact {
+    background-color: var(--black);
+    padding: 2rem 5%;
+}
+section.contact > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #eee;
+}
+.contact-us > p {
+    color: #c4c4c4;
+    margin: 8px 0;
+    font-size: 1rem;
+}
+.address {
+    margin: 16px 0;
+}
+.address div {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+.address i {
+    font-size: 1rem;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee;
+    resize: none;
+}
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #c4c4c4;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222023ef;
+    padding: 1rem 5%;
+    margin-top: -1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.copy {
+    color: #fff;
+    font-size: 1.15rem;
+}
+footer .title {
+    margin: 1rem 0;
+}
+.social-media img {
+    width: 48px;
+    margin: 0 4px;
+    border: 2px solid #eee;
+    border-radius: 50%;
 }
