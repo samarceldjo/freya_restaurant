@@ -331,8 +331,8 @@ textarea::placeholder {
 }
 
 /* FOOTER */
-footer {
-    background-color: #222023ef;
+.footer {
+    background-color: #222023f8;
     padding: 1rem 5%;
     margin-top: -1px;
     display: flex;
@@ -344,7 +344,7 @@ footer {
     color: #fff;
     font-size: 1.15rem;
 }
-footer .title {
+.footer .title {
     margin: 1rem 0;
 }
 .social-media i {
@@ -369,4 +369,17 @@ footer .title {
 }
 .fa-google-plus-g {
     background-color: #ff6347;
+}
+.madeby {
+    background-color: var(--black);
+    margin-top: -1px;
+    text-align: center;
+    padding: 1rem 5%;
+}
+.madeby p {
+    color: #eee;
+    font-family: "Bahnschrift";
+}
+p strong {
+    font-style: italic;
 }
