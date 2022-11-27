@@ -302,11 +302,16 @@ section.contact > div {
     margin: 16px 0;
 }
 .address div {
+    padding: 4px;
     margin-bottom: 8px;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
 }
 .address i {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    margin-right: 2rem;
+    color: var(--orange)
 }
 
 input[type="text"],
@@ -342,9 +347,26 @@ footer {
 footer .title {
     margin: 1rem 0;
 }
-.social-media img {
+.social-media i {
+    font-size: 1.5rem;
+    color: #eee;
     width: 48px;
-    margin: 0 4px;
-    border: 2px solid #eee;
+    height: 48px;
+    text-align: center;
+    padding-top: 12px;
+    margin: 4px;
     border-radius: 50%;
+    cursor: pointer;
+}
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+.fa-twitter {
+    background-color: #00aced;
+}
+.fa-instagram {
+    background-color: #ff00ff;
+}
+.fa-google-plus-g {
+    background-color: #ff6347;
 }
