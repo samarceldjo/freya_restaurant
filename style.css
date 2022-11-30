@@ -135,11 +135,13 @@ nav .menu {
 /* MAKE A RESERVATION */
 .make-a-reservation {
     background-color: var(--orange);
+    padding: 32px 5%;
+}
+.make-a-reservation > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 32px 5%;
 }
 .make-a-reservation p {
     font-size: 1rem;
@@ -231,6 +233,12 @@ hr {
     background-size: cover;
     position: relative;
 }
+.today-choice > div {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 .chefs-choice {
     background-color: var(--black);
     text-align: center;
@@ -314,6 +322,9 @@ section.contact > div {
     color: var(--orange)
 }
 
+.send-email {
+    width: 100%;
+}
 input[type="text"],
 textarea {
     display: block;
@@ -331,10 +342,12 @@ textarea::placeholder {
 }
 
 /* FOOTER */
-.footer {
+footer {
     background-color: #222023f8;
     padding: 1rem 5%;
     margin-top: -1px;
+}
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -382,4 +395,46 @@ textarea::placeholder {
 }
 p strong {
     font-style: italic;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    .make-a-reservation {
+        flex-direction: row;
+    }
+    .make-a-reservation > div {
+        flex-direction: row;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .menu .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .menu-col {
+        flex-basis: 48%;
+    }
+    .footer {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1148px) {
+    section.contact > div {
+        flex-direction: row;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .contact-us,
+    .send-email {
+        flex-basis: 48%;
+    }
+    .chefs-choice {
+        right: 0
+    }
 }
